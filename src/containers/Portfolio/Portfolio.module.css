@@ -94,7 +94,7 @@ nav a:hover {
 #projects h1 {
   text-align: center;
   margin-bottom: 48px;
-  margin-top: 48px;
+  padding-top: 48px;
 }
 
 .projectContainer {

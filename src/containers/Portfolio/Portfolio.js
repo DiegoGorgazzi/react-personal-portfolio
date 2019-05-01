@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Portfolio.css';
+import portfolioStyles from './Portfolio.module.css';
 
 
 class Portfolio extends Component {
@@ -14,18 +14,18 @@ class Portfolio extends Component {
         </nav>
 
 
-        <section id="welcome-section">
+        <section id={portfolioStyles["welcome-section"]}>
           <h1>Hi, I'm Mr. Anderson.</h1>
           <h1>My friends call me Neo.</h1>
           <h4>I'm a Web Developer</h4>
         </section>
 
-        <section id="projects">
+        <section id={portfolioStyles.projects}>
           <h1>Some of the Projects I did at FCC...</h1>
 
-          <div className="projectContainer">
+          <div className={portfolioStyles.projectContainer}>
 
-            <div className="project-title">
+            <div className={portfolioStyles["project-title"]}>
                <picture>
                  <a href="https://codepen.io/StartHere/full/pxQwGV">
                    <img
@@ -38,7 +38,7 @@ class Portfolio extends Component {
               </picture>
             </div>
 
-            <div className="project-title">
+            <div className={portfolioStyles["project-title"]}>
              <picture>
                <a href="https://codepen.io/StartHere/full/Edpzbe">
                  <img
@@ -50,7 +50,7 @@ class Portfolio extends Component {
             </picture>
           </div>
 
-            <div className="project-title">
+            <div className={portfolioStyles["project-title"]}>
              <picture>
               <a href="https://codepen.io/StartHere/full/VErWRL">
                 <img
@@ -63,7 +63,7 @@ class Portfolio extends Component {
             </picture>
           </div>
 
-             <div className="project-title">
+             <div className={portfolioStyles["project-title"]}>
                <picture>
                 <a href="https://codepen.io/StartHere/full/MPmRNv">
                   <img src="https://dl.dropbox.com/s/oi7s38d8dy0w2lt/Project2Survey.png?dl=0"
@@ -75,7 +75,7 @@ class Portfolio extends Component {
               </picture>
              </div>
 
-             <div className="project-title">
+             <div className={portfolioStyles["project-title"]}>
                <picture>
                 <a href="https://codepen.io/StartHere/full/qJawxB">
                   <img
@@ -93,14 +93,14 @@ class Portfolio extends Component {
 
 
 
-      <section id="contact">
+      <section id={portfolioStyles.contact}>
          <h1>Let's work Together</h1>
           <h4>How do you take your coffee?</h4>
 
-        <div className="contactContainer">
+        <div className={portfolioStyles.contactContainer}>
 
-          <div className="contact-title">
-             <div className="circle">
+          <div className={portfolioStyles["contact-title"]}>
+             <div className={portfolioStyles.circle}>
               <a id="profile-link"
                  href="https://github.com/diegoman1923"
                  target="_blank"
@@ -110,8 +110,8 @@ class Portfolio extends Component {
             </div>
           </div>
 
-          <div className="contact-title">
-             <div className="circle">
+          <div className={portfolioStyles["contact-title"]}>
+             <div className={portfolioStyles.circle}>
               <a id="profile-link"
                  href="https://github.com/diegoman1923"
                  target="_blank"
@@ -121,8 +121,8 @@ class Portfolio extends Component {
             </div>
           </div>
 
-          <div className="contact-title">
-             <div className="circle">
+          <div className={portfolioStyles["contact-title"]}>
+             <div className={portfolioStyles.circle}>
               <a id="profile-link"
                  href="https://github.com/diegoman1923"
                  target="_blank"
@@ -132,8 +132,8 @@ class Portfolio extends Component {
             </div>
           </div>
 
-          <div className="contact-title">
-             <div className="circle">
+          <div className={portfolioStyles["contact-title"]}>
+             <div className={portfolioStyles.circle}>
                 <a id="profile-link"
                     href="https://github.com/diegoman1923"
                     target="_blank"
@@ -144,8 +144,8 @@ class Portfolio extends Component {
           </div>
 
 
-          <div className="contact-title">
-             <div className="circle">
+          <div className={portfolioStyles["contact-title"]}>
+             <div className={portfolioStyles.circle}>
               <a id="profile-link"
               href="https://github.com/diegoman1923"
               target="_blank"

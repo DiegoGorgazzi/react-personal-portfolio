@@ -62,7 +62,7 @@ nav a:hover {
 
 /*********** END OF NAVIGATION STUFF*********/
 
-#welcome-section {
+.welcome-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +71,11 @@ nav a:hover {
   text-align: center;
 }
 
-#welcome-section h1 {
+.welcome-section h1 {
   margin: 0;
 }
 
-#welcome-section h4 {
+.welcome-section h4 {
   color: #008000;
   animation: aWebDeveloper 3s 5;
   margin-top: 20px;
@@ -86,14 +86,38 @@ nav a:hover {
     to {color: var(--animationColor-end, green);}
 }
 
-#projects {
-  background: white;
+:global #work {
+  background-color: white;
 }
 
-#projects h1 {
+.projects {
+  background-color: white;
+}
+
+.projects h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-top: 24px;
+}
+
+.projects h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  padding-top: 18px;
+}
+
+.projects h4 {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.projects p {
   text-align: center;
   margin-bottom: 48px;
-  padding-top: 48px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .projectContainer {
@@ -101,39 +125,13 @@ nav a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/*
-.project-title {
-  width: 45%;
-  min-width: 300px;
-  margin-bottom: 48px;
-}
 
-img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-}
 
-figcaption {
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-*/
-
-#projects a {
+.projects a {
   display:block; /*required to make entire box clickable*/
   text-decoration: none;
   color: #008000;
 }
-/*
-@media (max-width: 700px) {
-  .project-title {
-   width: 80%;
-   min-width: 300px;
-  }
-  }
-*/
 
 #contact {
   background: #C2FFC2;
@@ -196,7 +194,7 @@ footer {
   background-color: #4D4DFE;
 }
 
-p {
+footer p {
   padding: 24px;
   font-size: 14px;
   color: white;

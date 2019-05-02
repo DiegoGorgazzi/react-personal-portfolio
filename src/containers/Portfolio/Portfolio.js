@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import portfolioStyles from './Portfolio.module.css';
 import Project from "../../components/Projects/Project/Project";
 import Projects from "../../components/Projects/Projects";
+import {projectListOne} from "../../shared/projectListOne/projectListOne";
 
 class Portfolio extends Component {
   render() {
@@ -74,7 +75,8 @@ class Portfolio extends Component {
           <p> These are all challenge projects from freeCodeCamp (FCC).
             They all involved starting from scratch. </p>
 
-        <Projects />
+        <Projects
+          projectList = {projectListOne} />
 
         </section>
 

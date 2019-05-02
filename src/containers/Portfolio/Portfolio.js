@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import portfolioStyles from './Portfolio.module.css';
+import Project from "../../components/Project/Project";
 
 
 class Portfolio extends Component {
@@ -25,67 +26,40 @@ class Portfolio extends Component {
 
           <div className={portfolioStyles.projectContainer}>
 
-            <div className={portfolioStyles["project-title"]}>
-               <picture>
-                 <a href="https://codepen.io/StartHere/full/pxQwGV">
-                   <img
-                     src="https://dl.dropbox.com/s/i28mpp1n8f463cw/Project5Portfolio.png?dl=0"
-                     alt="Project number 5, Personal Portfolio Page"/>
-                  <figcaption>
-                        Project #5: Personal Portfolio
-                  </figcaption>
-                </a>
-              </picture>
-            </div>
+            <Project
+              projectURL="https://codepen.io/StartHere/full/pxQwGV"
+              imageSource="https://dl.dropbox.com/s/i28mpp1n8f463cw/Project5Portfolio.png?dl=0"
+              altDescription="Project number 5, Personal Portfolio Page"
+              projectTitle="Project #5: Personal Portfolio"
+            />
 
-            <div className={portfolioStyles["project-title"]}>
-             <picture>
-               <a href="https://codepen.io/StartHere/full/Edpzbe">
-                 <img
-                   src="https://dl.dropbox.com/s/zsoqbc8d4rllcd0/Project4Documentation.png?dl=0"
-                   alt="Project number 4, Documentation Page"/>
-                 <figcaption>
-                   Project #4: Documentation Page
-                 </figcaption> </a>
-            </picture>
-          </div>
+            <Project
+              projectURL="https://codepen.io/StartHere/full/Edpzbe"
+              imageSource="https://dl.dropbox.com/s/zsoqbc8d4rllcd0/Project4Documentation.png?dl=0"
+              altDescription="Project number 4, Documentation Page"
+              projectTitle="Project #4: Documentation Page"
+              />
 
-            <div className={portfolioStyles["project-title"]}>
-             <picture>
-              <a href="https://codepen.io/StartHere/full/VErWRL">
-                <img
-                    src="https://dl.dropbox.com/s/ypqmu10qkxni702/Project3ProductPage.png?dl=0"
-                    alt="Project number 3, Product Page"/>
-                <figcaption>
-                Project #3: Product Page
-                </figcaption>
-              </a>
-            </picture>
-          </div>
+            <Project
+              projectURL="https://codepen.io/StartHere/full/VErWRL"
+              imageSource="https://dl.dropbox.com/s/ypqmu10qkxni702/Project3ProductPage.png?dl=0"
+              altDescription="Project number 3, Product Page"
+              projectTitle="Project #3: Product Page"
+            />
 
-             <div className={portfolioStyles["project-title"]}>
-               <picture>
-                <a href="https://codepen.io/StartHere/full/MPmRNv">
-                  <img src="https://dl.dropbox.com/s/oi7s38d8dy0w2lt/Project2Survey.png?dl=0"
-                       alt="Project number 2, Survey Form"/>
-                  <figcaption>
-                        Project #2: Survey Form
-                  </figcaption>
-                </a>
-              </picture>
-             </div>
+            <Project
+              projectURL="https://codepen.io/StartHere/full/MPmRNv"
+              imageSource="https://dl.dropbox.com/s/oi7s38d8dy0w2lt/Project2Survey.png?dl=0"
+              altDescription="Project number 2, Survey Form"
+              projectTitle="Project #2: Survey Form"
+            />
 
-             <div className={portfolioStyles["project-title"]}>
-               <picture>
-                <a href="https://codepen.io/StartHere/full/qJawxB">
-                  <img
-                    src="https://dl.dropbox.com/s/ak5ppvomibuqfs6/Project1TributePage.png?dl=0"
-                    alt="Project number 1, Tribute Page"/>
-                  <figcaption>
-                    Project #1: Tribute Page
-                  </figcaption> </a>
-               </picture>
-            </div>
+            <Project
+              projectURL="https://codepen.io/StartHere/full/qJawxB"
+              imageSource="https://dl.dropbox.com/s/ak5ppvomibuqfs6/Project1TributePage.png?dl=0"
+              altDescription="Project number 1, Tribute Page"
+              projectTitle="Project #1: Tribute Page"
+              />
 
           </div>
         </section>

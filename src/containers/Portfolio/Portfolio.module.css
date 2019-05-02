@@ -63,7 +63,6 @@ nav a:hover {
 /*********** END OF NAVIGATION STUFF*********/
 
 #welcome-section {
-  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,12 +97,11 @@ nav a:hover {
 }
 
 .projectContainer {
-  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+/*
 .project-title {
   width: 45%;
   min-width: 300px;
@@ -121,20 +119,21 @@ figcaption {
   padding: 10px;
   font-weight: bold;
 }
-
+*/
 
 #projects a {
   display:block; /*required to make entire box clickable*/
   text-decoration: none;
   color: #008000;
 }
-
+/*
 @media (max-width: 700px) {
   .project-title {
    width: 80%;
    min-width: 300px;
   }
   }
+*/
 
 #contact {
   background: #C2FFC2;
@@ -152,7 +151,6 @@ figcaption {
 }
 
 .contactContainer {
-  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -171,7 +169,6 @@ figcaption {
   background-color: transparent;
   border-radius: 100px;
   background: #F7F7F7;
-  display: -webkit-flex;
   display: flex;
   }
 

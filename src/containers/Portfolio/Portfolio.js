@@ -31,10 +31,10 @@ class Portfolio extends Component {
           <h4> Rites of Passage?</h4>
           <p> These are all challenge projects from freeCodeCamp (FCC).
             They all involved starting from scratch. Some of these
-          remind me of the Internet from the 1990's. </p>
+          remind me of the Internet from the 1990's. Good times. </p>
 
-        <Projects
-          projectList = {projectListOne} />
+          <Projects
+            projectList = {projectListOne} />
 
         </section>
 

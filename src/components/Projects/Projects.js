@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project/Project";
-import portfolioStyles from '../../containers/Portfolio/Portfolio.module.css';
+import projectsStyles from './Projects.module.css';
 
 const mappedProject = (props) => props.projectList.map((eachProject, index) =>
   { return <Project
@@ -14,7 +14,7 @@ const mappedProject = (props) => props.projectList.map((eachProject, index) =>
 );
 
 const projects = (props) => (
-  <div className={portfolioStyles.projectContainer}>
+  <div className={projectsStyles.projectContainer}>
     {mappedProject(props)}
 </div>
 

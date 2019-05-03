@@ -120,13 +120,6 @@ nav a:hover {
 
 }
 
-.projectContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-
 .projects a {
   display:block; /*required to make entire box clickable*/
   text-decoration: none;

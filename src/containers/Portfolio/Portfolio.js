@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import portfolioStyles from './Portfolio.module.css';
 import Projects from "../../components/Projects/Projects";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+
 import {projectListOne} from "../../shared/projectListOne/projectListOne";
 import {projectListTwo} from "../../shared/projectListTwo/projectListTwo";
+
 
 class Portfolio extends Component {
   state = {
@@ -13,7 +17,7 @@ class Portfolio extends Component {
 
 
 toggleProjectVisibility = (event) => {
-    let hideProject = "hide"+event.target.name;
+    let hideProject = "hide"+event.target.id;
     let hideStatus = this.state[hideProject];
     this.setState({
       [hideProject]: !hideStatus
@@ -26,9 +30,9 @@ toggleProjectVisibility = (event) => {
 
       <div>
         <nav id="navbar">
-            <h4><a href="#welcome-section">ABOUT</a></h4>
-            <h4><a href="#work">WORK</a></h4>
-            <h4><a href="#contact">CONTACT ME</a></h4>
+            <h4><a href="#welcome-section">About</a></h4>
+            <h4><a href="#work">Work</a></h4>
+            <h4><a href="#contact">Contact Me</a></h4>
         </nav>
 
 
@@ -49,25 +53,100 @@ toggleProjectVisibility = (event) => {
             They all involved starting from scratch. Some of these
           remind me of the Internet from the 1990's. Good times. </p>
 
-          <div>
-            <button name="Proj1" onClick={this.toggleProjectVisibility} >
-              {this.state.hideProj1 ? "Show": "Hide"} Projects
-            </button>
-            {!this.state.hideProj1 &&
-              <Projects projectList = {projectListOne} />}
-        </div>
+              <div className={portfolioStyles.showMore}>
+                    <div
 
-        <div>
-          <button name="Proj2" onClick={this.toggleProjectVisibility} >
-            {this.state.hideProj2 ? "Show" : "Hide"} Projects
-          </button>
-          {!this.state.hideProj2 &&
-            <Projects projectList = {projectListTwo} />}
-      </div>
+                      >
+                      {this.state.hideProj1 ?
+                         <span
+                            id="Proj1"
+                             onClick={this.toggleProjectVisibility}>
+                             Show Projects
+                              <span
+                               className={portfolioStyles.showMoreArrowDown}
+                               id="Proj1"
+                                onClick={this.toggleProjectVisibility}>
+                                &#8964;
+                              </span>
+                          </span>
+
+                        : <span
+                           id="Proj1"
+                            onClick={this.toggleProjectVisibility}>
+
+                             <span
+                              className={portfolioStyles.showMoreArrowUp}
+                              id="Proj1"
+                               onClick={this.toggleProjectVisibility}>
+                                  &#8963;
+                             </span>
+                             Hide Projects
+                         </span> }
+                    </div>
+            </div>
+
+                {!this.state.hideProj1 &&
+                  <Projects projectList = {projectListOne} />}
+
+
+
+
+          <h3> WordPress and a sprinkle of HTML</h3>
+          <h4> A long time ago, in a Galaxy far, far away...</h4>
+          <p> ???????????????????????????????????????? ???? ?????? </p>
+
+              <div className={portfolioStyles.showMore}>
+                    <div
+
+                      >
+                      {this.state.hideProj2 ?
+                         <span
+                            id="Proj2"
+                             onClick={this.toggleProjectVisibility}>
+                             Show Projects
+                              <span
+                               className={portfolioStyles.showMoreArrowDown}
+                               id="Proj2"
+                                onClick={this.toggleProjectVisibility}>
+                                &#8964;
+                              </span>
+                          </span>
+
+                        : <span
+                           id="Proj2"
+                            onClick={this.toggleProjectVisibility}>
+
+                             <span
+                              className={portfolioStyles.showMoreArrowUp}
+                              id="Proj2"
+                               onClick={this.toggleProjectVisibility}>
+                                  &#8963;
+                             </span>
+                             Hide Projects
+                         </span> }
+                    </div>
+            </div>
+
+                {!this.state.hideProj2 &&
+                  <Projects projectList = {projectListTwo} />}
 
         </section>
 
 
+
+{/*
+        <div>
+          <button id="Proj2" onClick={this.toggleProjectVisibility} >
+            {this.state.hideProj2 ? "Show" : "Hide"} Projects
+          </button>
+
+          {!this.state.hideProj2 &&
+            <Projects projectList = {projectListTwo} />}
+
+      </div>
+
+        </section>
+*/}
 
       <section id={portfolioStyles.contact}>
          <h1>Let's work Together</h1>

@@ -92,30 +92,6 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
-.showMore {
-  display: block;
-  color: green;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: -25px;
-  margin-bottom: 25px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.showMoreArrowUp {
-  margin-bottom: -25px;
-  font-size: 40px;
-  display: block;
-}
-
-.showMoreArrowDown {
-  margin-top: -25px;
-  font-size: 40px;
-  display: block;
-}
-
 .projects {
   background-color: white;
 }

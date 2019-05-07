@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import portfolioStyles from './Portfolio.module.css';
+import ProjCategory from '../../components/ProjCategory/ProjCategory';
 import Projects from "../../components/Projects/Projects";
 import ToggleVisibility from "../../components/ToggleVisibility/ToggleVisibility";
 
@@ -44,8 +45,10 @@ toggleProjectVisibility = (event) => {
         </section>
 
         <section className={portfolioStyles.projects}>
-          <h3> Vanilla HTML and CSS</h3>
-          <h4> Rite of Passage?</h4>
+          <ProjCategory
+            catTitle = "Vanilla HTML and CSS"
+            catSubTitle = "Rite of Passage?"
+            >
           <p> These are all challenge projects from freeCodeCamp (FCC).
             They all involved starting from scratch. Some of these
           remind me of the Internet from the 1990's. Good times. </p>
@@ -81,11 +84,14 @@ toggleProjectVisibility = (event) => {
                 {!this.state.hideProj1 &&
                   <Projects projectList = {projectListOne} />}
 
+        </ProjCategory>
 
+        <ProjCategory
+          catTitle = "WordPress and a sprinkle of HTML"
+          catSubTitle = "A long time ago in a Galaxy far, far away..."
+          >
 
-          <h3> WordPress and a sprinkle of HTML</h3>
-          <h4> A long time ago in a Galaxy far, far away...</h4>
-          <p> ????????????????? ??????????????????????? ???? ?????? </p>
+            <p> ???????? ????????? ?????????? ????????????? ???? ?????? </p>
 
             <ToggleVisibility
                 whatState = {this.state.hideProj2}
@@ -95,20 +101,30 @@ toggleProjectVisibility = (event) => {
                 hideText = "Hide Projects"
               />
 
-                {!this.state.hideProj2 &&
+              {!this.state.hideProj2 &&
                   <Projects projectList = {projectListTwo} />}
 
+        </ProjCategory>
 
-        <ToggleVisibility
-            whatState = {this.state.hideProj3}
-            hideID = "Proj3"
-            hideOnClick = {this.toggleProjectVisibility}
-            showText = "Show Projects"
-            hideText = "Hide Projects"
-          />
+        <ProjCategory
+          catTitle = "Project Category Title"
+          catSubTitle = "Project Categoy Sub Title"
+          >
 
-        {!this.state.hideProj3 &&
-            <Projects projectList = {projectListThree} />}
+          <p> and this is my description </p>
+
+          <ToggleVisibility
+              whatState = {this.state.hideProj3}
+              hideID = "Proj3"
+              hideOnClick = {this.toggleProjectVisibility}
+              showText = "Show Projects"
+              hideText = "Hide Projects"
+            />
+
+          {!this.state.hideProj3 &&
+              <Projects projectList = {projectListThree} />}
+
+      </ProjCategory>
 
 
         </section>

@@ -25,11 +25,15 @@
   font-size: 15px;
 }
 
-.circle a:hover {
-      background-color: #97FCAE;
-      color: black;
-      border-radius: 100px;
-      font-size:16px;
-      font-weight: 900;
-      cursor: pointer;
+
+
+@media (hover:hover) {
+  .circle a:hover {
+        background-color: #97FCAE;
+        color: black;
+        border-radius: 100px;
+        font-size:16px;
+        font-weight: 900;
+        cursor: pointer;
+  }
 }

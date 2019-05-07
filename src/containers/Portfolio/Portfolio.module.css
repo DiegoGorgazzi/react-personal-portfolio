@@ -155,42 +155,6 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.contact-title {
-  width: 18%;
-  min-width: 120px;
-  margin-bottom: 48px;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #66FB88;
-  background-color: transparent;
-  border-radius: 100px;
-  background: #F7F7F7;
-  display: flex;
-  }
-
-.circle a {
-  display:block;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding-top: 41%; /* if I used align-items:center, the div doesn't become clickable */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.circle a:hover {
-      background-color: #97FCAE;
-      color: black;
-      border-radius: 100px;
-      font-size:16px;
-      font-weight: 900;
-      cursor: pointer;
-}
-
 footer {
   background-color: #4D4DFE;
 }
@@ -202,31 +166,3 @@ footer p {
   font-weight: 500;
   text-align: center;
 }
-
-
-/* ***************************NOT USED************
-typewriter effect
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation
-  border-right: .15em solid orange; /* The typwriter cursor
-  white-space: nowrap; /* Keeps the content on a single line
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens
-  letter-spacing: .15em; /* Adjust as needed
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/*The typing effect
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-*/
-
-/* The typewriter cursor effect
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-*/

@@ -1,6 +1,5 @@
 import React from "react";
 import ToggleVisibilityStyles from './ToggleVisibility.module.css';
-import Projects from "../Projects/Projects";
 
 const toggleVisibility = (props) => {
   if (props.whatState) {

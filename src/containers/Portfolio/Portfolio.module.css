@@ -40,10 +40,12 @@ nav a {
   color: black;
 }
 
-nav a:hover {
-      color: #0000BD;
-      cursor: pointer;
+@media (hover:hover) {
+  nav a:hover {
+        color: #0000BD;
+        cursor: pointer;
 
+  }
 }
 
 @media (max-width: 450px) {
@@ -134,17 +136,17 @@ nav a:hover {
   color: #008000;
 }
 
-#contact {
+.contact {
   background: #C2FFC2;
 }
 
-#contact h1 {
+.contact h1 {
   text-align: center;
   padding-top: 28px;
   margin-bottom: 12px;
 }
 
-#contact h4 {
+.contact h4 {
   text-align: center;
   margin-bottom: 48px;
 }

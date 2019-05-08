@@ -4,6 +4,7 @@ import ProjCategory from '../../components/ProjCategory/ProjCategory';
 import Projects from "../../components/Projects/Projects";
 import ToggleVisibility from "../../components/ToggleVisibility/ToggleVisibility";
 import ContactProfile from "../../components/ContactProfile/ContactProfile";
+import AboutMe from "../../components/aboutMe/aboutMe";
 
 import {projectListOne} from "../../shared/projectListOne/projectListOne";
 import {projectListTwo} from "../../shared/projectListTwo/projectListTwo";
@@ -17,11 +18,11 @@ class Portfolio extends Component {
       hideProj3: true,
   }
 
-toggleProjectVisibility = (event) => {
-    let hideProject = "hide"+event.target.id;
-    let hideStatus = this.state[hideProject];
+toggleCompVisibility = (event) => {
+    let hideComponent = "hide"+event.target.id;
+    let hideStatus = this.state[hideComponent];
     this.setState({
-      [hideProject]: !hideStatus
+      [hideComponent]: !hideStatus
     })
   }
 
@@ -49,24 +50,24 @@ toggleProjectVisibility = (event) => {
         <section
           className= {toggleStyle}
           >
-          <div id={portfolioStyles.myMessage}>
-            <h1 id="hi">Hi, I'm Diego</h1>
-            <h1>This is my SPA Portfolio created with</h1>
-            <h4>React</h4>
+            <div id={portfolioStyles.myMessage}>
+              <h1 id="hi">Hi, I'm Diego</h1>
+              <h1>This is my SPA Portfolio created with</h1>
+              <h4>React</h4>
+            </div>
+
+          <div>
+              <ToggleVisibility
+                  whatState = {this.state.hideAboutMe}
+                  hideID = "AboutMe"
+                  hideOnClick = {this.toggleCompVisibility}
+                  showText = "More about me"
+                  hideText = "Less about me"
+                />
+
+              {!this.state.hideAboutMe && <AboutMe />}
+
           </div>
-
-        <div>
-            <ToggleVisibility
-                whatState = {this.state.hideAboutMe}
-                hideID = "AboutMe"
-                hideOnClick = {this.toggleProjectVisibility}
-                showText = "More about me"
-                hideText = "Less about me"
-              />
-
-            {!this.state.hideAboutMe &&
-                <Projects projectList = {projectListOne} />}
-        </div>
 
         </section>
 
@@ -109,7 +110,7 @@ toggleProjectVisibility = (event) => {
             <ToggleVisibility
                 whatState = {this.state.hideProj1}
                 hideID = "Proj1"
-                hideOnClick = {this.toggleProjectVisibility}
+                hideOnClick = {this.toggleCompVisibility}
                 showText = "Show Projects"
                 hideText = "Hide Projects"
               />
@@ -129,7 +130,7 @@ toggleProjectVisibility = (event) => {
               <ToggleVisibility
                   whatState = {this.state.hideProj2}
                   hideID = "Proj2"
-                  hideOnClick = {this.toggleProjectVisibility}
+                  hideOnClick = {this.toggleCompVisibility}
                   showText = "Show Projects"
                   hideText = "Hide Projects"
                 />
@@ -149,7 +150,7 @@ toggleProjectVisibility = (event) => {
             <ToggleVisibility
                 whatState = {this.state.hideProj3}
                 hideID = "Proj3"
-                hideOnClick = {this.toggleProjectVisibility}
+                hideOnClick = {this.toggleCompVisibility}
                 showText = "Show Projects"
                 hideText = "Hide Projects"
               />

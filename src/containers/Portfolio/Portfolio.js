@@ -9,6 +9,7 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 import {projectListOne} from "../../shared/projectListOne/projectListOne";
 import {projectListTwo} from "../../shared/projectListTwo/projectListTwo";
 import {projectListThree} from "../../shared/projectListThree/projectListThree";
+import {projectListFour} from "../../shared/projectListFour/projectListFour";
 
 class Portfolio extends Component {
   state = {
@@ -16,6 +17,7 @@ class Portfolio extends Component {
       hideProj1: true,
       hideProj2: true,
       hideProj3: true,
+      hideProj4: true
   }
 
 toggleCompVisibility = (event) => {
@@ -79,6 +81,68 @@ toggleCompVisibility = (event) => {
             <h1>SOME OF WHAT I'VE DONE</h1>
           </div>
 
+          <ProjCategory
+            catTitle = "React"
+            catSubTitle = "Project Categoy Sub Title"
+            >
+
+            <p> and this is my description </p>
+
+            <ToggleVisibility
+                whatState = {this.state.hideProj4}
+                hideID = "Proj4"
+                hideOnClick = {this.toggleCompVisibility}
+                showText = "Show Projects"
+                hideText = "Hide Projects"
+              />
+
+            {!this.state.hideProj4 &&
+               <Projects projectList = {projectListFour} />}
+
+          </ProjCategory>
+
+          <ProjCategory
+            catTitle = "Algorithms, mostly JavaScript"
+            catSubTitle = "Project Categoy Sub Title"
+            >
+
+            <p> and this is my description </p>
+
+            <ToggleVisibility
+                whatState = {this.state.hideProj3}
+                hideID = "Proj3"
+                hideOnClick = {this.toggleCompVisibility}
+                showText = "Show Projects"
+                hideText = "Hide Projects"
+              />
+
+            {!this.state.hideProj3 &&
+               <Projects projectList = {projectListThree} />}
+
+          </ProjCategory>
+
+          <ProjCategory
+            catTitle = "WordPress and a sprinkle of HTML"
+            catSubTitle = "A long time ago in a Galaxy far, far away..."
+            >
+
+              <p> ???????? ????????? ?????????? ????????????? ???? ?????? </p>
+
+              <ToggleVisibility
+                  whatState = {this.state.hideProj2}
+                  hideID = "Proj2"
+                  hideOnClick = {this.toggleCompVisibility}
+                  showText = "Show Projects"
+                  hideText = "Hide Projects"
+                />
+
+                {!this.state.hideProj2 &&
+                    <Projects projectList = {projectListTwo} />}
+
+          </ProjCategory>
+
+
+
             <ProjCategory
               catTitle = "Vanilla HTML and CSS"
               catSubTitle = "Rite of Passage?"
@@ -120,45 +184,6 @@ toggleCompVisibility = (event) => {
 
           </ProjCategory>
 
-          <ProjCategory
-            catTitle = "WordPress and a sprinkle of HTML"
-            catSubTitle = "A long time ago in a Galaxy far, far away..."
-            >
-
-              <p> ???????? ????????? ?????????? ????????????? ???? ?????? </p>
-
-              <ToggleVisibility
-                  whatState = {this.state.hideProj2}
-                  hideID = "Proj2"
-                  hideOnClick = {this.toggleCompVisibility}
-                  showText = "Show Projects"
-                  hideText = "Hide Projects"
-                />
-
-                {!this.state.hideProj2 &&
-                    <Projects projectList = {projectListTwo} />}
-
-          </ProjCategory>
-
-          <ProjCategory
-            catTitle = "Project Category Title"
-            catSubTitle = "Project Categoy Sub Title"
-            >
-
-            <p> and this is my description </p>
-
-            <ToggleVisibility
-                whatState = {this.state.hideProj3}
-                hideID = "Proj3"
-                hideOnClick = {this.toggleCompVisibility}
-                showText = "Show Projects"
-                hideText = "Hide Projects"
-              />
-
-            {!this.state.hideProj3 &&
-               <Projects projectList = {projectListThree} />}
-
-        </ProjCategory>
 
 
         </section>

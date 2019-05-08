@@ -66,21 +66,42 @@ nav a {
 
 .welcome-section {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  margin-bottom: 5%;
   align-items: center;
   flex-direction: column;
   height: 100vh;
   text-align: center;
 }
 
+.welcome-section-toggled {
+  margin-top: 20%;
+  margin-bottom: 5%;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
 .welcome-section h1 {
-  margin: 0;
+  margin: 10px;
 }
 
 .welcome-section h4 {
   color: #008000;
   animation: aWebDeveloper 3s 5;
   margin-top: 20px;
+  margin-bottom: 48px;
+}
+
+.welcome-section-toggled  h1 {
+  margin: 0;
+}
+
+.welcome-section-toggled  h4 {
+  color: #008000;
+  animation: aWebDeveloper 3s 5;
+  margin-top: 20px;
+  margin-bottom: 48px;
 }
 
 @keyframes aWebDeveloper {

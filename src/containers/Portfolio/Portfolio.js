@@ -11,6 +11,7 @@ import {projectListThree} from "../../shared/projectListThree/projectListThree";
 
 class Portfolio extends Component {
   state = {
+      hideAboutMe: true,
       hideProj1: true,
       hideProj2: true,
       hideProj3: true,
@@ -25,6 +26,16 @@ toggleProjectVisibility = (event) => {
   }
 
   render() {
+    //Conditional styling on Welcome screen IF a Togle component is included
+    let toggleStyle;
+    if(this.state.hideAboutMe) {
+      toggleStyle = portfolioStyles["welcome-section"];
+    } else {
+      toggleStyle = portfolioStyles["welcome-section-toggled"];
+    }
+
+
+
     return (
 
       <div>
@@ -34,15 +45,33 @@ toggleProjectVisibility = (event) => {
             <h4><a href="#contact">Contact Me</a></h4>
         </nav>
 
+{/*-----------------------Welcome / About section ----------------------------*/}
+        <section
+          className= {toggleStyle}
+          >
+          <div id={portfolioStyles.myMessage}>
+            <h1 id="hi">Hi, I'm Diego</h1>
+            <h1>This is my SPA Portfolio created with</h1>
+            <h4>React</h4>
+          </div>
 
-        <section className={portfolioStyles["welcome-section"]} id="welcome-section">
-          <h1>Hi, I'm Mr. Anderson.</h1>
-          <h1>My friends call me Neo.</h1>
-          <h4>I'm a Web Developer</h4>
+        <div>
+            <ToggleVisibility
+                whatState = {this.state.hideAboutMe}
+                hideID = "AboutMe"
+                hideOnClick = {this.toggleProjectVisibility}
+                showText = "More about me"
+                hideText = "Less about me"
+              />
+
+            {!this.state.hideAboutMe &&
+                <Projects projectList = {projectListOne} />}
+        </div>
+
         </section>
 
 
-
+{/*----------------------Projects Section--------------------------------------*/}
         <section className={portfolioStyles.projects}>
 
           <div className={portfolioStyles.work} id="work">
@@ -135,7 +164,7 @@ toggleProjectVisibility = (event) => {
 
 
 {/* -------------------CONTACT ME SECTION------------------------------------*/}
-      <section id={portfolioStyles.contact}>
+      <section className={portfolioStyles.contact} id="contact">
         <h1>Let's work Together</h1>
         <h4>How do you take your coffee?</h4>
 

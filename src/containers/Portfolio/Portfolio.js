@@ -96,7 +96,7 @@ toggleCompVisibility = (event) => {
               I had to "invest" a good chunk of time figuring out how to add a toggle
               functionality to the app because the &#60;details&#62; element is not supported
               by Internet Explorer. So, Microsoft, you owe a lot of people free lunch
-              &#128522;. </p>
+              <span role="img" aria-label="	Smiling Face with Smiling Eyes"> &#128522;</span>. </p>
 
             <ToggleVisibility
                 whatState = {this.state.hideProj4}

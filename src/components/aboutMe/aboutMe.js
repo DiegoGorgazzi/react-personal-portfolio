@@ -6,7 +6,7 @@ export const aboutMe = (props) => (
   <h3> I Love Solving Problems </h3>
 
   <p> I started this journey trying to solve a specific problem.  Because of these skills,
-    the funny thing is I now believe that problem is insignificant compared to
+    the funny thing is I now believe that problem I wanted to solve is insignificant compared to
      the other problems I now envision I could help solve. </p>
 
   <p> I did my first website in 2011. It was a WYSIWYG.
@@ -32,13 +32,13 @@ export const aboutMe = (props) => (
 
   <p> Then I saw the light at the end of the tunnel with
   JavaScript (actually, with React). Thanks mainly to freeCodeCamp
-  and Udemy, I was able to find a clear direction of where I
-  needed to go. </p>
+  and Udemy, I was able to find a clear path to follow. </p>
 
 <p> When I graduated from Engineering School almost 20 years ago, I didn't think
   there was much more to learn.</p>
 
-<p> I discovered Not only I didn't know anything right out of school,
+<p> But starting with my first day of work, I discovered Not only I didn't know
+  anything right out of school,
   but I learned a new thing  every single day of my career (and my humility
   seemed to have grown exponentially the more I realized how much
   I didn't know and will never know).</p>
@@ -49,8 +49,10 @@ export const aboutMe = (props) => (
   one person to build anything. </p>
 
   <p> So,
-  I expect to keep learning every day until I die, but let me entertain you with what little
-  I've done so far in the app developer world. One day I hope to solve a meaningful problem with these skills
+  I expect to keep learning and cooperating with people every day of my life,
+  but let me entertain you with what little
+  I've done so far in the app developer world. One day I hope to solve a meaningful
+  problem with these skills
   so stay tuned. </p>
 
   <p> Thanks for Reading! </p>

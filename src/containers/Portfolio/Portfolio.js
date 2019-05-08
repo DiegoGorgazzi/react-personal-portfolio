@@ -4,7 +4,7 @@ import ProjCategory from '../../components/ProjCategory/ProjCategory';
 import Projects from "../../components/Projects/Projects";
 import ToggleVisibility from "../../components/ToggleVisibility/ToggleVisibility";
 import ContactProfile from "../../components/ContactProfile/ContactProfile";
-import AboutMe from "../../components/aboutMe/aboutMe";
+import AboutMe from "../../components/AboutMe/AboutMe";
 
 import {projectListOne} from "../../shared/projectListOne/projectListOne";
 import {projectListTwo} from "../../shared/projectListTwo/projectListTwo";

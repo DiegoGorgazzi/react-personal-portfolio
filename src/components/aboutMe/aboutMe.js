@@ -1,7 +1,8 @@
 import React from 'react';
+import aboutMeStyles from './AboutMe.module.css';
 
 export const aboutMe = (props) => (
-<div>
+<div className={aboutMeStyles.aboutMe}>
   <h3> I Love Solving Problems </h3>
 
   <p> I started this journey trying to solve a specific problem and now that

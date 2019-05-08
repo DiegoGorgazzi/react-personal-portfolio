@@ -80,13 +80,23 @@ toggleCompVisibility = (event) => {
           <div className={portfolioStyles.work} id="work">
             <h1>SOME OF WHAT I'VE DONE</h1>
           </div>
-
+      {/*---------------------Project Category---------------------------*/}
           <ProjCategory
             catTitle = "React"
-            catSubTitle = "Project Categoy Sub Title"
+            catSubTitle = "Solve World Hunger"
             >
 
-            <p> and this is my description </p>
+            <p> I started playing around with React in January 2019. When I
+              started to understand its capabilities, I was so excited (still am) that
+              I felt there was no problem in the world that couldn't be solved. I immediatly
+            got a gush of ideas flowing on how to improve this or that.</p>
+
+            <p>I have just scratched the surface, but here are some projects mostly from
+              FCC, except for this portfolio site you're seeing here. Which by the way,
+              I had to "invest" a good chunk of time figuring out how to add a toggle
+              functionality to the app because the &#60;details&#62; element is not supported
+              by Internet Explorer. So, Microsoft, you owe a lot of people free lunch
+              &#128522;. </p>
 
             <ToggleVisibility
                 whatState = {this.state.hideProj4}
@@ -100,13 +110,35 @@ toggleCompVisibility = (event) => {
                <Projects projectList = {projectListFour} />}
 
           </ProjCategory>
-
+  {/*---------------------Project Category---------------------------*/}
           <ProjCategory
-            catTitle = "Algorithms, mostly JavaScript"
-            catSubTitle = "Project Categoy Sub Title"
+            catTitle = "Algorithms"
+            catSubTitle = "A different kind of Rhythm"
             >
 
-            <p> and this is my description </p>
+            <p> For many years I heard the word "algorithm" being thrown around
+              by virtually everybody who was as far removed from software engineering as
+              LA is from NYC, but I never
+              knew what an algorithm was. To me it sounded like Magic. Meanwhile, there I was in my office, working
+              days and nights, a lot of the time
+              writing, "if", "or", "and", and other operators in Excel spreadsheets
+              like nobody's business. </p>
+
+            <p> Essentially, unbeknown to me, I was already
+              writing algorithms. Granted, compared to an app, Excel is a lot simpler,
+              but the basic structure of the logic is very similar. </p>
+
+            <p>
+              A few years ago I did some Project Euler challenges using Python. I don't
+              think I remember how to use python (but I do remember putting an extra space
+              could mean the end of the world!). However, here,
+              are the challenges from FCC, using JavaScript. After completing these,
+              I looked at how other people solved them and was in awe at how ingenious
+              some of the solutions are. Still, mine look decent enough.</p>
+            <p> To be fair,
+              you'd probably argue that React projects are also algorithms but I decided to put them in a league
+              of their own.
+              </p>
 
             <ToggleVisibility
                 whatState = {this.state.hideProj3}
@@ -120,13 +152,19 @@ toggleCompVisibility = (event) => {
                <Projects projectList = {projectListThree} />}
 
           </ProjCategory>
-
+  {/*---------------------Project Category---------------------------*/}
           <ProjCategory
             catTitle = "WordPress and a sprinkle of HTML"
             catSubTitle = "A long time ago in a Galaxy far, far away..."
             >
 
-              <p> ???????? ????????? ?????????? ????????????? ???? ?????? </p>
+              <p> I used the Genesis framework. Making awesome websites with
+                WordPress is so easy, I can't believe people pay other people to
+                build them.</p>
+              <p> This is where I got my hands dirty with SEO,
+                Google Analytics, and Google AdWords (now just Google Ads).
+               I should mention, I'm aware that this site, being an SPA, is not
+               yet SEO friendly. </p>
 
               <ToggleVisibility
                   whatState = {this.state.hideProj2}
@@ -140,16 +178,17 @@ toggleCompVisibility = (event) => {
                     <Projects projectList = {projectListTwo} />}
 
           </ProjCategory>
-
-
-
+  {/*---------------------Project Category---------------------------*/}
             <ProjCategory
               catTitle = "Vanilla HTML and CSS"
               catSubTitle = "Rite of Passage?"
               >
-            <p> These are all challenge projects from freeCodeCamp (FCC).
-              They all involved starting from scratch. Some of these
-            remind me of the Internet from the 1990's. Good times. </p>
+            <p> If you want to get to point B, you need to start at point A. I wasn't
+              particularly thrilled to play around with "old" tech, but FlexBox
+              gave me a good run for the money (it still does!). These are all
+              challenge projects from freeCodeCamp (FCC). They all involved starting
+              from scratch. Some of these  remind me of the Internet from the 1990's.
+              Good times. </p>
 
             {/*IMPORTANT for ToggleVisibility: hideID MUST match the second part of
                the word after "hide" in state.

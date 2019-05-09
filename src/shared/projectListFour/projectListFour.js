@@ -1,4 +1,4 @@
-
+import reactPersonalPortfolio from '../../assets/images/react-personal-portfolio.png';
 import javaScriptCalculator from '../../assets/images/javascript-react-calculator.png';
 import drumMachine from '../../assets/images/drum-machine.png';
 import markdownPreviewer from '../../assets/images/markdown-previewer.png';
@@ -9,8 +9,8 @@ import randomQuoteMachine from '../../assets/images/random-quote-machine.png';
 export const projectListFour = [
 
   {projectURL:"https://diegogorgazzi.firebaseapp.com/",
-  imageSource: "",
-  altDescription:"Project number 5, React SPA Personal Portfolio",
+  imageSource: reactPersonalPortfolio,
+  altDescription:"React, React SPA Personal Portfolio",
   projectTitle:"React SPA Personal Portfolio"},
 
   {projectURL:"https://react-calculator-diego.firebaseapp.com/",

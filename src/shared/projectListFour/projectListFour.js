@@ -1,27 +1,35 @@
+
+import javaScriptCalculator from '../../assets/images/javascript-react-calculator.png';
+import drumMachine from '../../assets/images/drum-machine.png';
+import markdownPreviewer from '../../assets/images/markdown-previewer.png';
+import randomQuoteMachine from '../../assets/images/random-quote-machine.png';
+
+
+
 export const projectListFour = [
 
-  {projectURL:"https://codepen.io/StartHere/full/pxQwGV",
-  imageSource:"https://dl.dropbox.com/s/i28mpp1n8f463cw/Project5Portfolio.png?dl=0",
-  altDescription:"Project number 5, Personal Portfolio Page",
-  projectTitle:"Project #15446515: Personal Portfolio"},
+  {projectURL:"https://diegogorgazzi.firebaseapp.com/",
+  imageSource: "",
+  altDescription:"Project number 5, React SPA Personal Portfolio",
+  projectTitle:"React SPA Personal Portfolio"},
 
-  {projectURL:"https://codepen.io/StartHere/full/Edpzbe",
-  imageSource:"https://dl.dropbox.com/s/zsoqbc8d4rllcd0/Project4Documentation.png?dl=0",
-  altDescription:"Project number 4, Documentation Page",
-  projectTitle:"Project #4: Documentation Page"},
+  {projectURL:"https://react-calculator-diego.firebaseapp.com/",
+  imageSource: javaScriptCalculator,
+  altDescription:"FCC Project number 4, React JavaScript Calculator",
+  projectTitle:"FCC Project #4: React JavaScript Calculator"},
 
-  {projectURL:"https://codepen.io/StartHere/full/VErWRL",
-  imageSource:"https://dl.dropbox.com/s/ypqmu10qkxni702/Project3ProductPage.png?dl=0",
-  altDescription:"Project number 3, Product Page",
-  projectTitle:"Project #3: Product Page"},
+  {projectURL:"https://drum-machine-diego.firebaseapp.com/",
+  imageSource: drumMachine,
+  altDescription:"FCC Project number 3, Drum Machine",
+  projectTitle:"FCC Project #3: Drum Machine"},
 
-  {projectURL:"https://codepen.io/StartHere/full/MPmRNv",
-  imageSource:"https://dl.dropbox.com/s/oi7s38d8dy0w2lt/Project2Survey.png?dl=0",
-  altDescription:"Project number 2, Survey Form",
-  projectTitle:"Project #2: Survey Form"},
+  {projectURL:"https://markdown-previewer-diego.firebaseapp.com/",
+  imageSource: markdownPreviewer,
+  altDescription:"FCC Project number 2, Markdown Previewer",
+  projectTitle:"FCC Project #2: Markdown Previewer"},
 
-  {projectURL:"https://codepen.io/StartHere/full/qJawxB",
-  imageSource:"https://dl.dropbox.com/s/ak5ppvomibuqfs6/Project1TributePage.png?dl=0",
-  altDescription:"Project number 1, Tribute Page",
-  projectTitle:"Project #1: Tribute Page"}
+  {projectURL:"https://random-quote-machine-diego.firebaseapp.com/",
+  imageSource: randomQuoteMachine,
+  altDescription:"FCC Project number 1, Random Quote Machine",
+  projectTitle:"FCC Project #1: Random Quote Machine"}
 ];

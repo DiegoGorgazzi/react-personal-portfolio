@@ -14,8 +14,8 @@
 
 body {
   background-color: #F7F7F7;
-  font-family: Comfortaa, Oswald, Lobster, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: Oswald, Comfortaa, Lobster, Helvetica, Arial, sans-serif;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,7 @@ nav a {
   }
 }
 
-/*********** END OF NAVIGATION STUFF*********/
+/****************** WELCOME SECTION*****************/
 
 .welcome-section {
   display: flex;
@@ -87,10 +87,13 @@ nav a {
 }
 
 .welcome-section h4 {
-  color: #008000;
+  color: #61dafb;
   animation: aWebDeveloper 3s 5;
   margin-top: 20px;
   margin-bottom: 48px;
+  font-size: 25px;
+  font-family: ubuntu;
+  background-color:#282c34;
 }
 
 .welcome-section-toggled  h1 {
@@ -98,10 +101,16 @@ nav a {
 }
 
 .welcome-section-toggled  h4 {
-  color: #008000;
+  color: #61dafb;
   animation: aWebDeveloper 3s 5;
   margin-top: 20px;
   margin-bottom: 48px;
+  font-size: 25px;
+  font-family: ubuntu;
+  background-color:#282c34;
+  margin-left: auto;
+  margin-right:auto;
+  width: 60%;
 }
 
 @keyframes aWebDeveloper {

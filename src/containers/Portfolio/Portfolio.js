@@ -120,7 +120,7 @@ toggleCompVisibility = (event) => {
               by virtually everybody who was as far removed from software engineering as
               LA is from NYC, but I never
               knew what an algorithm was. To me it sounded like Magic. Meanwhile, there I was in my office, working
-              days and nights, a lot of the time
+              day and night, a lot of the time
               writing, "if", "or", "and", and other operators in Excel spreadsheets
               like nobody's business. </p>
 

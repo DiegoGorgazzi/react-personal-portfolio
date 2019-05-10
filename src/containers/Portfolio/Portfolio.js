@@ -229,7 +229,7 @@ toggleCompVisibility = (event) => {
 
 
 {/* -------------------CONTACT ME SECTION------------------------------------*/}
-      <section className={portfolioStyles.contact} id="contact">
+      <section className={portfolioStyles.contactSection} id="contact">
         <h1>Let's work Together</h1>
         <h4>How do you take your coffee?</h4>
 

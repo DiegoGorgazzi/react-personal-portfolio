@@ -135,17 +135,17 @@ nav a {
 }
 
 
-.contact {
+.contactSection {
   background: #C2FFC2;
 }
 
-.contact h1 {
+.contactSection h1 {
   text-align: center;
   padding-top: 28px;
   margin-bottom: 12px;
 }
 
-.contact h4 {
+.contactSection h4 {
   text-align: center;
   margin-bottom: 48px;
 }
@@ -156,6 +156,7 @@ nav a {
   flex-wrap: wrap;
 }
 
+/*************************** FOOTER SECTION *************************/
 footer {
   background-color: #4D4DFE;
 }

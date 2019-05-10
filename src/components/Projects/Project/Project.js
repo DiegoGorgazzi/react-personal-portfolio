@@ -1,5 +1,4 @@
 import React from "react";
-//import portfolioStyles from '../../containers/Portfolio/Portfolio.module.css';
 import projectStyles from "./Project.module.css";
 
 const project = (props) => (

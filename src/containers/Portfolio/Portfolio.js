@@ -63,8 +63,8 @@ toggleCompVisibility = (event) => {
                   whatState = {this.state.hideAboutMe}
                   hideID = "AboutMe"
                   hideOnClick = {this.toggleCompVisibility}
-                  showText = "More about me"
-                  hideText = "Less about me"
+                  showText = "More About Me"
+                  hideText = "Less About Me"
                 />
 
               {!this.state.hideAboutMe && <AboutMe />}
@@ -75,7 +75,7 @@ toggleCompVisibility = (event) => {
 
 
 {/*----------------------Projects Section--------------------------------------*/}
-        <section className={portfolioStyles.projects}>
+        <section className={portfolioStyles.projectsSection}>
 
           <div className={portfolioStyles.work} id="work">
             <h1>SOME OF WHAT I'VE DONE</h1>

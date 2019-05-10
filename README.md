@@ -1,68 +1,35 @@
+# React Personal Portfolio page
+Here's what it looks like: [Portofolio Page Sample](https://diegogorgazzi.firebase.com)
+
+This is a personal project that I originally set as private because I was going to do it quick and dirty.
+
+Turns out it was anything but quick (though still a little dirtyish :relaxed: ). Still, it has some pretty neat features I'd thought I'd share.
+
+### Features
+* CSS modules, so we don't lose track of what we're doing.
+* Several Reusable components. Yay!
+ For example:
+ * Do you have several Project categories? Just wrapped them in the &#60;ProjCategory&#62; element.
+ * Have a long list of Projects? Just make sure your list is an object with the properties described, then import it and wrapped it in a &#60;Projects&#62; element.
+ * Show/Hide anything, and customize the text, simply by using the &#60;ToggleVisibility&#62; element.
+
+### Nice to have at some point in the future
+* A login/authentication feature for backend editing (e.g. being able to customize layout, color, styling, content, etc, etc without the need to mess with code).
+* Although the entire world (and according to Star Wars and Star Trek, the entire Universe) speaks English, it'd be nice to let the user pick the language of the page.
+* A reusable component to display the menu in burger form when using mobile devices.
+* A reusable component to make the projects be displayed Netflix style.
+* A "contact me" form.
+
+##  Contributing
+Please contribute! If not, then you can still go forth an conquer... but if you make a good addition to your own project it would be nice if you can share it :gift:
+
+### Code of Conduct
+Please keep it professionally clean and friendly. That includes, but is not limited to:
+* Being patient. If you get frustrated, step away from the keyboard for a few minutes or hours before you do something you might regret later (if you need a few days, maybe you're in the wrong business?).
+* Being all inclusive. We are all people of different age, sex, religion, race, nationality, etc, etc. But, we're all people. Treat people like people and that'll be a good start.
+
+### Time is always in short supply
+* I seem to never have time for anything. This is the story of my life. There's always another project in the pipeline that needs (or would be nice) to be done and applying improvements to past projects is always a challenge. Still, I'll do my best to come back to this. If you contribute and I don't reply right away please accept my apologies in advance but know your contribution is important and I will reply as soon as possible.
+
+## Installation, Available Scripts, and other React related stuff
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

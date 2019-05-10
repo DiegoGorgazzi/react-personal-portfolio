@@ -18,10 +18,10 @@
   text-align: center;
   width: 100%;
   margin: 0;
-  padding-top: 41%; /* if I used align-items:center, the div doesn't become clickable */
+  padding-top: 38%; /* if I used align-items:center, the div doesn't become clickable */
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 

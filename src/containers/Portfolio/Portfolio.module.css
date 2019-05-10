@@ -13,7 +13,7 @@
 
 body {
   background-color: #F7F7F7;
-  font-family: Oswald, Comfortaa, Lobster, Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', 'Comfortaa', 'Lobster', Helvetica, Arial, sans-serif;
   font-size: 24px;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ nav a {
 
 .welcome-section h4 {
   color: #61dafb;
-  animation: aWebDeveloper 3s 5;
+  animation: aWebDeveloper 1.5s 3;
   margin-top: 20px;
   margin-bottom: 48px;
   font-size: 25px;
@@ -134,7 +134,7 @@ nav a {
   padding-top: 24px;
 }
 
-
+/************************** CONTACT SECTION ****************************************/
 .contactSection {
   background: #C2FFC2;
 }

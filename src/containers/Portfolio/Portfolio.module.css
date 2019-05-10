@@ -101,7 +101,7 @@ nav a {
 
 .welcome-section-toggled  h4 {
   color: #61dafb;
-  animation: aWebDeveloper 3s 5;
+  animation: aWebDeveloper 1.5s 3;
   margin-top: 20px;
   margin-bottom: 48px;
   font-size: 25px;

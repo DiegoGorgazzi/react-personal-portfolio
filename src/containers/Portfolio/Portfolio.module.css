@@ -5,7 +5,6 @@
   }
 
 /*let's leave no margin/padding between section so you can't see a "box" at each section */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,7 @@ body {
 }
 
 
-/************ BEGINNING OF NAVIGATION *********/
+/************************ BEGINNING OF NAVIGATION ******************/
 nav {
   display: flex;
   justify-content: flex-end;
@@ -62,7 +61,7 @@ nav a {
   }
 }
 
-/****************** WELCOME SECTION*****************/
+/*************************** WELCOME SECTION*************************/
 
 .welcome-section {
   display: flex;

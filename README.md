@@ -1,5 +1,5 @@
 # React Personal Portfolio page
-Here's what it looks like: [Portofolio Page Sample](https://diegogorgazzi.firebase.com)
+Here's what it looks like: [Portofolio Page Sample](https://diegogorgazzi.firebaseapp.com)
 
 This is a personal project that I originally set as private because I was going to do it quick and dirty.
 

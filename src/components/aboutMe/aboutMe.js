@@ -51,7 +51,7 @@ export const aboutMe = (props) => (
   <p> So,
   I expect to keep learning and cooperating with people every day of my life,
   but let me entertain you with what little
-  I've done so far in the app developer world. One day I hope to solve a meaningful
+  I've done so far in the app development world. One day I hope to solve a meaningful
   problem with these skills
   so stay tuned. </p>
 

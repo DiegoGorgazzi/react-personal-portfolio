@@ -43,7 +43,7 @@ toggleCompVisibility = (event) => {
 
       <div>
         <nav id="navbar">
-            <h4><a href="#welcome-section">About</a></h4>
+            <h4><a href="#about">About</a></h4>
             <h4><a href="#work">Work</a></h4>
             <h4><a href="#contact">Contact Me</a></h4>
         </nav>
@@ -53,7 +53,7 @@ toggleCompVisibility = (event) => {
           className= {toggleStyle}
           >
             <div id={portfolioStyles.myMessage}>
-              <h1 id="hi">Hi, I'm Diego</h1>
+              <h1 id="about">Hi, I'm Diego</h1>
               <h1>This is my SPA Portfolio created with</h1>
               <h4>React</h4>
             </div>

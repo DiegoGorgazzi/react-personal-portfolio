@@ -131,7 +131,7 @@ toggleCompVisibility = (event) => {
             <p>
               A few years ago I did some Project Euler challenges using Python. I don't
               think I remember how to use python (but I do remember putting an extra space
-              could mean the end of the world!). However, here,
+              could mean the end of the world!). However, here in the link below,
               are the challenges from FCC, using JavaScript. After completing these,
               I looked at how other people solved them and was in awe at how ingenious
               some of the solutions are. Still, mine look decent enough.</p>
@@ -186,7 +186,7 @@ toggleCompVisibility = (event) => {
             <p> If you want to get to point B, you need to start at point A. I wasn't
               particularly thrilled to play around with "old" tech, but FlexBox
               gave me a good run for the money (it still does!). These are all
-              challenge projects from freeCodeCamp (FCC). They all involved starting
+              challenge projects from freeCodeCamp (FCC) which involved starting
               from scratch. Some of these  remind me of the Internet from the 1990's.
               Good times. </p>
 

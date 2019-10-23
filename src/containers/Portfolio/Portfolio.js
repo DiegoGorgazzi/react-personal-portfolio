@@ -10,6 +10,7 @@ import { projectListOne } from "../../shared/projectListOne/projectListOne";
 import { projectListTwo } from "../../shared/projectListTwo/projectListTwo";
 import { projectListThree } from "../../shared/projectListThree/projectListThree";
 import { projectListFour } from "../../shared/projectListFour/projectListFour";
+import {projectListFive} from "../../shared/projectListFive/projectListFive";
 
 class Portfolio extends Component {
   state = {
@@ -17,7 +18,8 @@ class Portfolio extends Component {
     hideProj1: true,
     hideProj2: true,
     hideProj3: true,
-    hideProj4: true
+    hideProj4: true,
+    hideProj5: true
   };
 
   toggleCompVisibility = event => {
@@ -77,10 +79,56 @@ class Portfolio extends Component {
           <div className={portfolioStyles.work} id="work">
             <h1>SOME OF WHAT I'VE DONE</h1>
           </div>
+           {/*---------------------Project Category---------------------------*/}
+           <ProjCategory catTitle="AWS Fullstack Serverless SPA w/ React Redux + Data Visualization (d3.js via react-vis)" catSubTitle="Now We're in Business">
+            <p>
+              When I was learning Node.js and Express, working with databases (such as MySQL 
+              and MongoDB), authentication, and other common backend tasks (serving RESTful APIs), 
+              I got to a point that I told myself "there has to be a better way". The more I delved 
+              into Node/Express, the more I felt like it was a chore. It felt like busywork.
+            </p>
+
+            <p>
+              I remember reading -And I'm completely paraphrasing- that 
+              if you're building a wooden dining table, you wouldn't go and 
+              manufacture the glue to hold it together. You would just buy the glue and 
+              build the table. The glue's job is just to hold stuff together. The main event
+              is the table.
+            </p>
+
+            <p>
+              Enter Serverless (which turns out, still uses servers 
+              {/* Emojis taken from unicode-table.com */}
+              <span role="img" aria-label="Smiling Face with Open Mouth"> 
+              &#128515; </span>). Authentication is figured out for you, 
+              Databases (NoSQL) are too, and much more (like API gateway and lambda functions). 
+              With a relatively small amount of configuration,
+              you can have your backend up and running. All you need is your front 
+              end to make API calls and that's it. No more busywork. You can 
+              now concentrate on writing code that matters, without wasting time on the "glue". 
+            </p>
+
+            <p>
+              The project featured here is a work in progress (what app isn't?). But I hope 
+              you can appreciate the simplicity of it.
+            </p>
+
+            <ToggleVisibility
+              whatState={this.state.hideProj5}
+              hideID="Proj5"
+              hideOnClick={this.toggleCompVisibility}
+              showText="Show Projects"
+              hideText="Hide Projects"
+            />
+
+            {!this.state.hideProj5 && (
+              <Projects projectList={projectListFive} />
+            )}
+          </ProjCategory>
+
           {/*---------------------Project Category---------------------------*/}
           <ProjCategory catTitle="React" catSubTitle="Solve World Hunger">
             <p>
-              {" "}
               I started playing around with React in January 2019. When I
               started to understand its capabilities, I was so excited (still
               am) that I felt there was no problem in the world that couldn't be
@@ -96,10 +144,10 @@ class Portfolio extends Component {
               the &#60;details&#62; element is not supported by Internet
               Explorer. So, Microsoft, you owe a lot of people free lunch
               <span role="img" aria-label="	Smiling Face with Smiling Eyes">
-                {" "}
+
                 &#128522;
               </span>
-              .{" "}
+              .
             </p>
 
             <ToggleVisibility
@@ -120,21 +168,19 @@ class Portfolio extends Component {
             catSubTitle="A different kind of Rhythm"
           >
             <p>
-              {" "}
               For many years I heard the word "algorithm" being thrown around by
               virtually everybody who was as far removed from software
               engineering as LA is from NYC, but I never knew what an algorithm
               was. To me it sounded like Magic. Meanwhile, there I was in my
               office, working day and night, a lot of the time writing, "if",
               "or", "and", and other operators in Excel spreadsheets like
-              nobody's business.{" "}
+              nobody's business.
             </p>
 
             <p>
-              {" "}
               Essentially, unbeknown to me, I was already writing algorithms.
               Granted, compared to an app, Excel is a lot simpler, but the basic
-              structure of the logic is very similar.{" "}
+              structure of the logic is very similar.
             </p>
 
             <p>
@@ -147,7 +193,6 @@ class Portfolio extends Component {
               are. Still, mine look decent enough.
             </p>
             <p>
-              {" "}
               To be fair, you'd probably argue that React projects are also
               algorithms but I decided to put them in a league of their own.
             </p>
@@ -170,16 +215,14 @@ class Portfolio extends Component {
             catSubTitle="A long time ago in a Galaxy far, far away..."
           >
             <p>
-              {" "}
               I used the Genesis framework. Making awesome websites with
               WordPress is so easy, I can't believe people pay other people to
               build them.
             </p>
             <p>
-              {" "}
               This is where I got my hands dirty with SEO, Google Analytics, and
               Google AdWords (now just Google Ads). I should mention, I'm aware
-              that this site, being an SPA, is not yet SEO friendly.{" "}
+              that this site, being an SPA, is not yet SEO friendly.
             </p>
 
             <ToggleVisibility
@@ -198,13 +241,12 @@ class Portfolio extends Component {
             catSubTitle="Rite of Passage?"
           >
             <p>
-              {" "}
               If you want to get to point B, you need to start at point A. I
               wasn't particularly thrilled to play around with "old" tech, but
               FlexBox gave me a good run for the money (it still does!). These
               are all challenge projects from freeCodeCamp (FCC) which involved
               starting from scratch. Some of these remind me of the Internet
-              from the 1990's. Good times.{" "}
+              from the 1990's. Good times.
             </p>
 
             {/*IMPORTANT for ToggleVisibility: hideID MUST match the second part of

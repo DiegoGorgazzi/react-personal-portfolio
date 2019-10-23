@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import logo from './logo.svg';
-import appStyles from './App.module.css';
-import Portfolio from './containers/Portfolio/Portfolio';
+import appStyles from "./App.module.css";
+import Portfolio from "./containers/Portfolio/Portfolio";
 
 class App extends Component {
-    render() {
+  render() {
     return (
       <div className={appStyles.App}>
-
         <Portfolio />
-
       </div>
     );
   }

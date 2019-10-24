@@ -80,7 +80,7 @@ class Portfolio extends Component {
             <h1>SOME OF WHAT I'VE DONE</h1>
           </div>
            {/*---------------------Project Category---------------------------*/}
-           <ProjCategory catTitle="AWS Fullstack Serverless SPA w/ React Redux + Data Visualization (d3.js via react-vis)" catSubTitle="Now We're in Business">
+           <ProjCategory catTitle="AWS Fullstack Serverless SPA w/ React Redux + Data Visualization (D3.js via react-vis)" catSubTitle="Now We're in Business">
             <p>
               When I was learning Node.js and Express, working with databases (such as MySQL 
               and MongoDB), authentication, and other common backend tasks (serving RESTful APIs), 

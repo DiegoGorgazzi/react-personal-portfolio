@@ -132,7 +132,7 @@ class Portfolio extends Component {
               I started playing around with React in January 2019. When I
               started to understand its capabilities, I was so excited (still
               am) that I felt there was no problem in the world that couldn't be
-              solved. I immediatly got a gush of ideas flowing on how to improve
+              solved. I immediately got a gush of ideas flowing on how to improve
               this or that.
             </p>
 
